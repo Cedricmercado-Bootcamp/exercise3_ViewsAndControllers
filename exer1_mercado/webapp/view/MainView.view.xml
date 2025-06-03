@@ -32,44 +32,7 @@
                 <Input id="idInputCC"    value=""                  visible="false" />
             </f:content>
           </f:SimpleForm>
-         <Table id="idTableSCart" inset="false">
-           <headerToolbar>
-           <OverflowToolbar id="idOFT">
-             <content>
-               <Title id="idTableTitleSCart" text="Shopping Cart"/>
-               <ToolbarSpacer id="idTSpacer"/>
-               <Button id="idBtnAddItems" icon="sap-icon://cart-4" tooltip="Add to Cart" press="onAddItem" />
-             </content>
-           </OverflowToolbar>
-           </headerToolbar>
-                <columns>
-                  <Column id="idCol1">
-                  <Text id="idColText1" text="Item"/>
-                  </Column>
-                  <Column id="idCol2">
-                  <Text id="idColText2" text="Quantity"/>
-                  </Column>
-                  <Column id="idCol3">
-                  <Text id="idColText3" text="Price"/>
-                  </Column>
-                </columns>
-                <items>
-                  <ColumnListItem id="idColListItem1" vAlign="Middle">
-                  <cells>
-                    <Text id="idText1" text="iPhone 14 Pro Max"/>
-                    <Text id="idText2" text="2"/>
-                    <Text id="idText3" text="$2000"/>
-                  </cells>
-                </ColumnListItem>
-                <ColumnListItem id="idColListItem2" vAlign="Middle">
-                <cells>
-                <Text id="idText4" text="Louis Vuitton Speedy"/>
-                <Text id="idText5" text="1"/>
-                <Text id="idText6" text="$14000"/>
-                </cells>
-                </ColumnListItem>
-                </items>
-                </Table>
+          <core:Fragment fragmentName="com.training.exer1mercado.fragment.ShoppingCart" type="XML" />
         </VBox>
     </content>
     <footer>
